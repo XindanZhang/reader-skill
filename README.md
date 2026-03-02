@@ -84,3 +84,5 @@ npm run build
 Use this tool in compliance with X terms, developer policies, and applicable law. For production-grade reliability and policy alignment, use official X API access.
 
 See [DISCLAIMER.md](DISCLAIMER.md) for a full legal disclaimer.
+
+If you are a rights holder or platform representative and believe any content or functionality in this repository infringes your rights or violates platform policy, please contact me at <your-email> with the relevant URL and details. I will review promptly and remove or disable material where appropriate.

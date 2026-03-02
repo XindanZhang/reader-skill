@@ -9,3 +9,4 @@ This repository is provided for educational and interoperability tooling purpose
 5. This repository does not grant any rights to third-party content, trademarks, or APIs.
 6. MIT License applies to this codebase only, not to external content retrieved by users.
 7. The maintainers provide this software "AS IS" without warranties; this document is not legal advice.
+8. If you are a rights holder or platform representative and believe any content or functionality in this repository infringes your rights or violates platform policy, please contact me at <your-email> with the relevant URL and details. I will review promptly and remove or disable material where appropriate.
