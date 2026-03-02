@@ -11,19 +11,19 @@ Use this skill whenever a user asks to read or summarize an X post URL such as:
 ## Command
 
 ```bash
-npx x-blog-reader read "<x-status-url>" --mode auto --format markdown
+npx reader-skill read "<x-status-url>" --mode auto --format markdown
 ```
 
 For structured output:
 
 ```bash
-npx x-blog-reader read "<x-status-url>" --mode auto --format json --pretty
+npx reader-skill read "<x-status-url>" --mode auto --format json --pretty
 ```
 
 For thread expansion (best effort, requires API token):
 
 ```bash
-X_BEARER_TOKEN=... npx x-blog-reader read "<x-status-url>" --mode api --thread --format markdown
+X_BEARER_TOKEN=... npx reader-skill read "<x-status-url>" --mode api --thread --format markdown
 ```
 
 ## Behavior

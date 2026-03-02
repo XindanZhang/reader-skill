@@ -1,10 +1,10 @@
 {
-  "name": "x-blog-reader-skill",
+  "name": "reader-skill",
   "version": "0.1.0",
   "description": "CLI + skill contract to read X posts/threads into structured, LLM-friendly text.",
   "type": "module",
   "bin": {
-    "x-blog-reader": "dist/index.js"
+    "reader-skill": "dist/index.js"
   },
   "files": [
     "dist",

@@ -1,6 +1,6 @@
-# x-blog-reader-skill
+# reader-skill
 
-`x-blog-reader-skill` is a TypeScript CLI + skill contract to make X posts (and optionally threads) readable for coding agents such as Codex CLI, Claude Code, and Gemini-style CLIs.
+`reader-skill` is a TypeScript CLI + skill contract to make X posts (and optionally threads) readable for coding agents such as Codex CLI, Claude Code, and Gemini-style CLIs.
 
 ## Why this repo exists
 
@@ -43,7 +43,7 @@ npm run dev -- read "https://x.com/blackanger/status/2027345330505924638" --mode
 ## CLI usage
 
 ```text
-x-blog-reader read <x-status-url> [options]
+reader-skill read <x-status-url> [options]
 
 Options:
   --mode <auto|api|jina|oembed>   Provider mode (default: auto)

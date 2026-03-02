@@ -12,10 +12,10 @@ interface ParsedArgs {
 }
 
 function printHelp(): void {
-  const help = `x-blog-reader
+  const help = `reader-skill
 
 Usage:
-  x-blog-reader read <x-status-url> [options]
+  reader-skill read <x-status-url> [options]
 
 Options:
   --mode <auto|api|jina|oembed>   Provider mode (default: auto)
@@ -26,9 +26,9 @@ Options:
   -h, --help                 Show help
 
 Examples:
-  x-blog-reader read "https://x.com/blackanger/status/2027345330505924638"
-  x-blog-reader read "https://x.com/blackanger/status/2027345330505924638" --thread --mode api --format markdown
-  x-blog-reader read "https://x.com/blackanger/status/2027345330505924638" --mode jina --format markdown
+  reader-skill read "https://x.com/blackanger/status/2027345330505924638"
+  reader-skill read "https://x.com/blackanger/status/2027345330505924638" --thread --mode api --format markdown
+  reader-skill read "https://x.com/blackanger/status/2027345330505924638" --mode jina --format markdown
 `;
 
   process.stdout.write(help);
@@ -49,7 +49,7 @@ function parseArgs(argv: string[]): ParsedArgs {
 
   const url = args[1];
   if (!url || url.startsWith("--")) {
-    throw new ReadError("INVALID_ARGS", "A status URL is required: x-blog-reader read <url>");
+    throw new ReadError("INVALID_ARGS", "A status URL is required: reader-skill read <url>");
   }
 
   let mode: ProviderMode = "auto";
