@@ -36,5 +36,6 @@ X_BEARER_TOKEN=... npx x-blog-reader read "<x-status-url>" --mode api --thread -
 ## Notes
 
 - For highest fidelity and near real-time reads, set `X_BEARER_TOKEN`.
-- If API token is missing in `auto` mode, the command falls back to oEmbed.
+- If API token is missing in `auto` mode, the command falls back to `jina` first, then `oembed`.
 - Respect X terms and policies when using this tool.
+- See `DISCLAIMER.md` in the repo root before public/commercial use.

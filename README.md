@@ -82,3 +82,5 @@ npm run build
 ## Legal and policy note
 
 Use this tool in compliance with X terms, developer policies, and applicable law. For production-grade reliability and policy alignment, use official X API access.
+
+See [DISCLAIMER.md](DISCLAIMER.md) for a full legal disclaimer.
