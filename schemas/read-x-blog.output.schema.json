@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/read-x-blog.output.schema.json",
+  "title": "read-x-blog output",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "fetchedAt",
+    "provider",
+    "request",
+    "summary",
+    "content",
+    "posts",
+    "warnings"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "fetchedAt": { "type": "string", "format": "date-time" },
+    "provider": { "enum": ["x-api", "jina", "oembed"] },
+    "request": {
+      "type": "object",
+      "required": ["inputUrl", "canonicalUrl", "mode", "includeThread", "maxPosts"],
+      "properties": {
+        "inputUrl": { "type": "string", "format": "uri" },
+        "canonicalUrl": { "type": "string", "format": "uri" },
+        "mode": { "enum": ["auto", "api", "jina", "oembed"] },
+        "includeThread": { "type": "boolean" },
+        "maxPosts": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "required": ["posts", "words"],
+      "properties": {
+        "posts": { "type": "integer", "minimum": 0 },
+        "words": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "content": {
+      "type": "object",
+      "required": ["title", "markdown", "text"],
+      "properties": {
+        "title": { "type": "string" },
+        "markdown": { "type": "string" },
+        "text": { "type": "string" }
+      }
+    },
+    "posts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "url", "authorName", "authorUsername", "createdAt", "text"],
+        "properties": {
+          "id": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "authorName": { "type": ["string", "null"] },
+          "authorUsername": { "type": ["string", "null"] },
+          "createdAt": { "type": ["string", "null"] },
+          "text": { "type": "string" }
+        }
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}
